@@ -5,12 +5,14 @@
   --grey: grey;
   --primary: orange;
   --secondary: white;
+  --contrast: #f5f5dc;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 nav {
@@ -19,6 +21,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid var(--text);
+  background-color: var(--primary);
 }
 
 nav > ul {
