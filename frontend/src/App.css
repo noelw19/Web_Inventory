@@ -27,7 +27,12 @@ nav > ul {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+}
 
+@media (max-width: 700px) {
+  nav > ul {
+    width: 100%;
+  }
 }
 
 ul > li {

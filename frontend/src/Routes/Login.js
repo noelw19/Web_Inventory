@@ -7,9 +7,10 @@ const useStyles = makeStyles({
         textAlign: "center",
     },
     formCenter: {
-        width: "70%",
+        width: "40%",
         display: "flex",
         justifyContent: "space-around",
+        flexDirection: "column",
         margin: "1rem",
     },
     btn: {
@@ -25,15 +26,19 @@ const Login = () => {
     return (
     <>
         <h1 className={classes.center}>Login</h1>
-        <Grid  container justify="center">
+        <Grid  container justify="center" direction="column">
+            <Grid container justify="center" direction="column" alignItems="center">
             <FormControl className={classes.formCenter} required='true'>
                 <InputLabel>Username</InputLabel>
                 <Input type="text" placeholder="Enter your username"/>
             </FormControl>
+            </Grid>
+            <Grid container justify="center" direction="column" alignItems="center">
             <FormControl className={classes.formCenter} required='true'>
                 <InputLabel >Password</InputLabel>
                 <Input type="text" placeholder="Enter your password"/>
             </FormControl>
+            </Grid>
         </Grid>
         <Grid container justify="center">
             <Button>Sumbit</Button>
